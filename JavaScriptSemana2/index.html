@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-image: url('bckJS2.jpg'); background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; color: #1A1915; font-family: 'Roboto Slab', serif;">
+
+
+	<center>
+
+	<div style="background-color: white; padding: 20px; border-radius: 5px;display:inline-block;">
+
+		<label for="idade">Gênero:</label>
+
+		<select onchange="genero()" name="genero" id="genero" style="font-family: 'Roboto Slab', serif;">
+		  <option value="0" hidden="true">Selecione o seu Gênero</option>
+		  <option value="1">Masculino</option>
+		  <option value="2">Feminino</option>
+		</select>
+		<br>
+		<p id="generop"></p>
+
+		<br>
+		<label for="idade">Idade:</label>
+
+		<select onchange="idade()" name="idade" id="idade" style="font-family: 'Roboto Slab', serif;">
+		  <option value="0" hidden="true">Selecione a sua idade</option>
+		  <option value="1">Menor de 17</option>
+		  <option value="2">18 - 30</option>
+		  <option value="3">31 - 50</option>
+		  <option value="4">Maior de 36</option>
+		</select>
+		<br>
+		<p id="idadep"></p>
+
+		<br>
+
+		<input type="text" name="TextaRepetir" id="TextaRepetir" placeholder="Descreva-se numa frase..." style="font-family: 'Roboto Slab', serif;">
+		<select name="VezesaRepetir" id="VezesaRepetir" style="font-family: 'Roboto Slab', serif;">
+		  <option value="0" hidden="true">Vezes a repetir</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		</select>
+		<button onclick="cicloFor()" style="font-family: 'Roboto Slab', serif;">Escrever</button>
+		<p id="TxtRepetir"></p>
+	</div> 
+
+
+	</center>
+
+
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
